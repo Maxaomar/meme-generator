@@ -11,6 +11,10 @@ export default function Main() {
 
     function handleChange(event) {
         const {value} = event.currentTarget
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            topText: value
+        }))
 
     }
 
